@@ -5,6 +5,8 @@ http://www.brunorota.com.br/2012/05/14/tutorial-criar-crud-em-java-com-jdbc-part
 
 create database "d:\agenda.fbd" user "sysdba" password "masterkey";
 
+connect "d:\agenda.fbd" user "sysdba" password "masterkey";
+
 create table contatos(
 	id int not null primary key,
 	nome varchar(40),
@@ -23,9 +25,9 @@ public class TesteAgenda {
 		TesteAgenda t = new TesteAgenda();
 
 		//popula o banco com 5 registros
-		for (int i = 0; i < 5; i++) {
+		/*for (int i = 0; i < 5; i++) {
 			t.insere(i,"antonio",(5*i)/3);
-		}
+		}*/
 
 		//t.altera(1,"carla",26);
 		//t.remove(1);
